@@ -1,15 +1,19 @@
 ;(function($){
 
-    $.get(
-        'js/main.json',
-        {
-          name: 'asd',
-          age: 73
+    $.ajax({
+        url: 'test.txt',
+        type: 'GET',
+        data: {},
+        dataType: 'text',
+        success: function(resualt){
+            return resualt;
         },
-        function(resualt){
-        console.log(resualt);
-        console.log(typeof resualt);
-        return resualt;
+        error: function(){
+
+        },
+        complete: function(){
+
+        }
     });
 
 })(jQuery);

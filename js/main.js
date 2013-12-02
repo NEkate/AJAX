@@ -1,12 +1,11 @@
 ;(function($){
 
     $.ajax({
-        url: 'http://en.wikipedia.org/w/api.php',
-        dataType: 'jsonp',
+        url: 'styles/style.css',
         data: {
             action: 'opensearch',
             format: 'json',
-            search: 'JS'
+            search: 'Javascript'
         },
         success: function(resualt){
             console.log(resualt);

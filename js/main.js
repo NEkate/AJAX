@@ -1,7 +1,8 @@
 ;(function($){
 
-    $.get('test.txt', function(resualt){
+    $.get('js/main.json', function(resualt){
         console.log(resualt);
+        console.log(typeof resualt);
         return resualt;
     });
 

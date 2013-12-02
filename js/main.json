@@ -1,0 +1,11 @@
+{
+    "field": 1,
+    "float": 1.11,
+    "type": "asd",
+    "nothing": null,
+    "bool": true,
+    "array": ["", 1, 1.1, {}],
+    "obj": {
+        "asd": 1
+    }
+}

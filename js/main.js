@@ -1,18 +1,15 @@
 ;(function($){
 
     $.ajax({
-        url: 'test.txt',
-        type: 'GET',
-        data: {},
-        dataType: 'text',
+        url: 'http://en.wikipedia.org/w/api.php',
+        dataType: 'jsonp',
+        data: {
+            action: 'opensearch',
+            format: 'json',
+            search: 'JS'
+        },
         success: function(resualt){
-            return resualt;
-        },
-        error: function(){
-
-        },
-        complete: function(){
-
+            console.log(resualt);
         }
     });
 
